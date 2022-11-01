@@ -115,9 +115,9 @@ class LinearModule(object):
         #######################
 
 
-class ELUModule(object):
+class ReLUModule(object):
     """
-    ELU activation module.
+    RELU activation module.
     """
 
     def forward(self, x):
