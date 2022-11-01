@@ -1,4 +1,4 @@
-name: dl2021
+name: dl2022
 channels:
   - pytorch
   - conda-forge
