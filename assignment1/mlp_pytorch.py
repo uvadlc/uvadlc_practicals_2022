@@ -1,7 +1,7 @@
 ################################################################################
 # MIT License
 #
-# Copyright (c) 2022 University of Amsterdam
+# Copyright (c) 2021 University of Amsterdam
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -10,8 +10,8 @@
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to conditions.
 #
-# Author: Deep Learning Course (UvA) | Fall 2022
-# Date Created: 2022-11-01
+# Author: Deep Learning Course (UvA) | Fall 2021
+# Date Created: 2021-11-01
 ################################################################################
 """
 This module implements a multi-layer perceptron (MLP) in PyTorch.
@@ -46,7 +46,7 @@ class MLP(nn.Module):
                      This number is required in order to specify the
                      output dimensions of the MLP
           use_batch_norm: If True, add a Batch-Normalization layer in between
-                          each Linear and ReLU layer.
+                          each Linear and ELU layer.
 
         TODO:
         Implement module setup of the network.
