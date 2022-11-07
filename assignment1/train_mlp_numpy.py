@@ -10,7 +10,7 @@
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to conditions.
 #
-# Author: Deep Learning Course (UvA) | Fall 2021
+# Author: Deep Learning Course (UvA) | Fall 2022
 # Date Created: 2021-11-01
 ################################################################################
 """
