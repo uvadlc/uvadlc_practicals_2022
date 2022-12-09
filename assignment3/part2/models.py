@@ -213,7 +213,7 @@ class AdversarialAE(nn.Module):
             z_fake - Batch of latent codes for fake samples. Shape: [B,z_dim]
 
         Outputs:
-            recon_loss - The MSE reconstruction loss between actual input and its reconstructed version.
+            disc_loss - The discriminator loss for real and fake latent codes.
             logging_dict - A dictionary for logging the model performance by following keys:
                 disc_loss - The discriminator loss for real and fake latent codes.
                 loss_real - The discriminator loss for latent codes sampled from the standard Gaussian prior.
