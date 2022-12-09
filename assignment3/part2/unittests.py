@@ -80,18 +80,6 @@ class TestDiscriminator(unittest.TestCase):
                         all([preds.shape[i] == o for i, o in enumerate([128, 1])]),
                         msg="The output of the discriminator should be a prediction with shape [B, 1].")
 
-    @torch.no_grad()
-    def test_output_values(self):
-        np.random.seed(42)
-        torch.manual_seed(42)
-        z_dim = 10
-        ae = AdversarialAE(z_dim=z_dim)
-        z = torch.randn(128, z_dim)
-        preds = ae.discriminator(z)
-        self.assertTrue((preds >= -1).all() and (preds <= 1).all(),
-                        msg="The output of the discriminator should have values between -1 and 1. "
-                            "A sigmoid as output activation function might be missing.")
-
 
 class TestAAE(unittest.TestCase):
 
