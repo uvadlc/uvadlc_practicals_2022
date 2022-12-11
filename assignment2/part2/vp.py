@@ -145,7 +145,7 @@ class RandomPatchPrompter(nn.Module):
         #######################
         # PUT YOUR CODE HERE  #
         #######################
-        # TODO: For a given batch of images, place the patch at the top-left
+        # TODO: For a given batch of images, place the patch at a random position
 
         # Hints:
         # - First define the prompt. Then add it to the batch of images.
